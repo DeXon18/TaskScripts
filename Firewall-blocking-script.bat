@@ -1,5 +1,6 @@
 @echo off
 REM Este script se utiliza para crear reglas de firewall que bloquean todas las conexiones para archivos con un nombre dado.
+REM Copialo en el directorio del programa que quieras bloquear y ejecutalo desde linea de comandos.
 
 cls
 REM Verifica si se proporcionó un nombre de regla como argumento.
@@ -29,8 +30,9 @@ Echo.
 GOTO :Finish
 
 :norulename
-Echo ¡Error! - No has especificado un nombre para la regla - firewall_blocking_script "Nombre de la regla"
+Echo ¡Error! - No has especificado un nombre para la regla - firewall-blocking-script "Nombre de la regla"
 Echo.
 
 :Finish
 Echo Bloqueo del firewall finalizado...
+pause
